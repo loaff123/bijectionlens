@@ -1,0 +1,209 @@
+{
+  "statement": "Only executor-specific path prefixes in presentation copies were replaced. Numerical results, source bytes, success/failure outcomes and original records were not changed. Original records remain preserved separately.",
+  "files": [
+    {
+      "public_file": "NUMERICAL_REVIEW.md",
+      "original_sha256": "28d985763acd9c1b7f8cfab4f26b1422bbec95dc7606be263d93618cc14c730f",
+      "public_sha256": "28d985763acd9c1b7f8cfab4f26b1422bbec95dc7606be263d93618cc14c730f",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "REVIEWED_SOURCE_SHA256.txt",
+      "original_sha256": "14a971387eda32f11b113eea00457c62ae7ff93e2af00801080993b8b7608074",
+      "public_sha256": "14a971387eda32f11b113eea00457c62ae7ff93e2af00801080993b8b7608074",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "adversarial-312-before-integer-fix.json",
+      "original_sha256": "e813c4fe959538f357fb1db81939b206219ba1b0ab848a6262eab23389a2e2a9",
+      "public_sha256": "dc734e70c3c692e492ec1257740eb25ea900df61b18cbfa68ba919f53fc3972c",
+      "presentation_only_sanitization": true
+    },
+    {
+      "public_file": "adversarial-312-before-integer-fix.log",
+      "original_sha256": "e6494bd60336077c28c17189dd54f993a7999ee2820c081a51fd15c710e146af",
+      "public_sha256": "fb07c188b6cb22cfddd3536d7c9de241e8905d1f6f393e32d3c8b9f38527e486",
+      "presentation_only_sanitization": true
+    },
+    {
+      "public_file": "adversarial-312.json",
+      "original_sha256": "c46e63f45a296e0c6673bab0c494a32d246e19bf1983793f0b9c8d585cf0303d",
+      "public_sha256": "c46e63f45a296e0c6673bab0c494a32d246e19bf1983793f0b9c8d585cf0303d",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "adversarial-312.log",
+      "original_sha256": "a0531bcde3e1f47cab77606fc794de86c3774130febb8fb28f5f46ed43d6911a",
+      "public_sha256": "e6c18acc517f65a4a536f5004be8330ec47aad746ba26b60935e934f4724f80c",
+      "presentation_only_sanitization": true
+    },
+    {
+      "public_file": "adversarial-313.json",
+      "original_sha256": "1f4d8f6594f1e8a28bfb7b0a2b10adbcfa05bf501d5c7c2a6e70bf0948e79178",
+      "public_sha256": "1f4d8f6594f1e8a28bfb7b0a2b10adbcfa05bf501d5c7c2a6e70bf0948e79178",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "adversarial-313.log",
+      "original_sha256": "1e47cc3a562b8c431145c8fd618527d44e11b56d440fb77e9028dcead0f2ee8d",
+      "public_sha256": "d80af77edd9635d70d2775ec7dbc412a33b114253bfc026fdfa2bafa7c3e1ca8",
+      "presentation_only_sanitization": true
+    },
+    {
+      "public_file": "bottleneck-312.json",
+      "original_sha256": "d88dc1770091c873bab38b0faf383359e999a68c04e22e0e4fab5a10ec4e34b9",
+      "public_sha256": "d88dc1770091c873bab38b0faf383359e999a68c04e22e0e4fab5a10ec4e34b9",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "bottleneck-312.log",
+      "original_sha256": "9ada19f7097b1f2655f0f00e6176d0bd8da712c9c6b3d2499edeeef3db1fb463",
+      "public_sha256": "38f3db9a402aae739300ef63fa9388ddc5b22b365d27e4d22f73122c767efec8",
+      "presentation_only_sanitization": true
+    },
+    {
+      "public_file": "bottleneck-313.json",
+      "original_sha256": "46c93115f55b2af5b368fceab75f74f63ff389a4ea8327ad888ebdab39fd7638",
+      "public_sha256": "46c93115f55b2af5b368fceab75f74f63ff389a4ea8327ad888ebdab39fd7638",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "bottleneck-313.log",
+      "original_sha256": "f70abd5b13ceff4b9c89b04210559299cc2bdfbaf696d3277b8d6f50eea379a2",
+      "public_sha256": "9d9f582b6ec42306ca57ebba92a9036efce6a5c3f4f9ad0f0dede4613cc0ea5f",
+      "presentation_only_sanitization": true
+    },
+    {
+      "public_file": "core-312.json",
+      "original_sha256": "b1a331f8436382ee400169d9d7b266d1d7fdbe1ec5ae9a534d8e066e7b515b37",
+      "public_sha256": "b1a331f8436382ee400169d9d7b266d1d7fdbe1ec5ae9a534d8e066e7b515b37",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "core-312.log",
+      "original_sha256": "360ec0dd09f98cb4be84000366f2a803734ff30e65b04cbc194ccfb7d85cb7dc",
+      "public_sha256": "6f3468288f4f9bceb9fa843a60d6d001c7237d1563896a4f3ba0d1ae9d99b046",
+      "presentation_only_sanitization": true
+    },
+    {
+      "public_file": "core-313.json",
+      "original_sha256": "694d2d106fd6ab0685975b15fe7a70fd21430aaa2b087c6585de0efbea5e032e",
+      "public_sha256": "694d2d106fd6ab0685975b15fe7a70fd21430aaa2b087c6585de0efbea5e032e",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "core-313.log",
+      "original_sha256": "c813b3cf3a86f8af81ec59eafb873c6583370dfe009329b1a15ddb784b2a7f67",
+      "public_sha256": "07a2a0048ed095d3b0546b802a1818f55c6bc7f35210c78617a7866af89c46d1",
+      "presentation_only_sanitization": true
+    },
+    {
+      "public_file": "decimal-312.json",
+      "original_sha256": "1e640489a143832339dfa4952b41420f1582ff320334e65c3f2b764c0021049e",
+      "public_sha256": "1e640489a143832339dfa4952b41420f1582ff320334e65c3f2b764c0021049e",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "decimal-312.log",
+      "original_sha256": "aa2f42b0d4be0320195c8db53a5b5775206f933c24e06ce88ed5273c4cd662b6",
+      "public_sha256": "044fdced4151e53cdd3821664fcedf7741400fb2f1b528acbab7ffbdef1fb50f",
+      "presentation_only_sanitization": true
+    },
+    {
+      "public_file": "decimal-313.json",
+      "original_sha256": "a46a4c8f38c5b2b6fdb58f66e57afafb72f10e76160a70c52d90cdb9adccd356",
+      "public_sha256": "a46a4c8f38c5b2b6fdb58f66e57afafb72f10e76160a70c52d90cdb9adccd356",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "decimal-313.log",
+      "original_sha256": "efc853d4c26069ff040a010769b79a7dbf013d0af172c90110f41b6c3381a59a",
+      "public_sha256": "8a52066723fc4c282cb289e703ac1b2b92cfb67a1de57fd99fe132cf32c213a6",
+      "presentation_only_sanitization": true
+    },
+    {
+      "public_file": "review_adversarial.py",
+      "original_sha256": "40abf37daed56376d2a796413d226b6750a8dc0f1986189346d4be6773a50cb5",
+      "public_sha256": "40abf37daed56376d2a796413d226b6750a8dc0f1986189346d4be6773a50cb5",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "review_bottleneck.py",
+      "original_sha256": "d024a3478acd508f2597dcc24c989dff2804931acff44f589affb287f2516b3a",
+      "public_sha256": "d024a3478acd508f2597dcc24c989dff2804931acff44f589affb287f2516b3a",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "review_core.py",
+      "original_sha256": "5a7cab874bd7603373b9c3184bed40832d59ba1bf0d1a7c9d76f7879aef52894",
+      "public_sha256": "5a7cab874bd7603373b9c3184bed40832d59ba1bf0d1a7c9d76f7879aef52894",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "review_decimal_helpers.py",
+      "original_sha256": "81d6a96562d91756e62abbee02059b7f814471fbc03d4276e445863ad3892aac",
+      "public_sha256": "81d6a96562d91756e62abbee02059b7f814471fbc03d4276e445863ad3892aac",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "reviewed-source/__init__.py",
+      "original_sha256": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+      "public_sha256": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "reviewed-source/bottleneck.py",
+      "original_sha256": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+      "public_sha256": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "reviewed-source/codec.py",
+      "original_sha256": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+      "public_sha256": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "reviewed-source/compare.py",
+      "original_sha256": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+      "public_sha256": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "reviewed-source/contract.py",
+      "original_sha256": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+      "public_sha256": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "reviewed-source/geometry.py",
+      "original_sha256": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+      "public_sha256": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "reviewed-source/matching.py",
+      "original_sha256": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+      "public_sha256": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "reviewed-source/models.py",
+      "original_sha256": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+      "public_sha256": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "reviewed-source/spatial.py",
+      "original_sha256": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+      "public_sha256": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "reviewed-source/verify.py",
+      "original_sha256": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+      "public_sha256": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+      "presentation_only_sanitization": false
+    }
+  ]
+}

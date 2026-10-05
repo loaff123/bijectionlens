@@ -1,0 +1,59 @@
+{
+  "statement": "Only executor-specific path prefixes in presentation copies were replaced. Numerical results, source bytes, success/failure outcomes and original records were not changed. Original records remain preserved separately.",
+  "files": [
+    {
+      "public_file": "RELEASE_REVIEW.md",
+      "original_sha256": "b7858d00a2a721d0e7a3963eb7789e5f4a294ee1b22ffbce225117a11f8286ec",
+      "public_sha256": "b7858d00a2a721d0e7a3963eb7789e5f4a294ee1b22ffbce225117a11f8286ec",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "adversarial-final-sdist.json",
+      "original_sha256": "ddaf6e5f7512332b7bf8bc5ced021585f7cb3c4caccfbbd98c94464d7cfc995a",
+      "public_sha256": "ddaf6e5f7512332b7bf8bc5ced021585f7cb3c4caccfbbd98c94464d7cfc995a",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "adversarial-final-wheel.json",
+      "original_sha256": "a0d70ec82a4a199c244280a6a10f158567f17c95b6c54a62f29c9ca728863d55",
+      "public_sha256": "a0d70ec82a4a199c244280a6a10f158567f17c95b6c54a62f29c9ca728863d55",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "adversarial-python313-final.json",
+      "original_sha256": "d0e81886f770270b57cd6591320606ea230e7475038ad4005968efc9075ac563",
+      "public_sha256": "d0e81886f770270b57cd6591320606ea230e7475038ad4005968efc9075ac563",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "adversarial_review.py",
+      "original_sha256": "02024549729d3ea22fdc7dec4816c5f940797fd969f028f9111a9cebdecf5e76",
+      "public_sha256": "02024549729d3ea22fdc7dec4816c5f940797fd969f028f9111a9cebdecf5e76",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "archive-audit-final.json",
+      "original_sha256": "30615fdc68efaaa26d0d142f5a9361b296e8563660f19f4716a81c1ede2c4d7b",
+      "public_sha256": "30615fdc68efaaa26d0d142f5a9361b296e8563660f19f4716a81c1ede2c4d7b",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "metadata-fixed-audit.json",
+      "original_sha256": "45feddddb788387f264b217b3badd65f1b4b73870f783bf0c10ac70501bc4306",
+      "public_sha256": "45feddddb788387f264b217b3badd65f1b4b73870f783bf0c10ac70501bc4306",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "reviewed-files-sha256.json",
+      "original_sha256": "1e0b806c911cc910418e99279c50bc099f8dcf7ac0e91a05e5d0484ff7692fcf",
+      "public_sha256": "1e0b806c911cc910418e99279c50bc099f8dcf7ac0e91a05e5d0484ff7692fcf",
+      "presentation_only_sanitization": false
+    },
+    {
+      "public_file": "unit-installed-wheel-final.log",
+      "original_sha256": "430c5be4f7352710341d3ba734cdbe1910d186ca1c605561a38bfe9fa0bba84e",
+      "public_sha256": "430c5be4f7352710341d3ba734cdbe1910d186ca1c605561a38bfe9fa0bba84e",
+      "presentation_only_sanitization": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "wheel": "bijectionlens-0.1.0-py3-none-any.whl",
+  "sha256": "8d25483495c608141d741dda35e04e38b7a03d3f3c9086d4d6018dccbe3742b7",
+  "unwanted_members": [],
+  "sentinel_bytecode_and_nonpackage_text_excluded": true,
+  "members": [
+    "bijectionlens/__init__.py",
+    "bijectionlens/__main__.py",
+    "bijectionlens/bottleneck.py",
+    "bijectionlens/cli.py",
+    "bijectionlens/codec.py",
+    "bijectionlens/compare.py",
+    "bijectionlens/contract.py",
+    "bijectionlens/geometry.py",
+    "bijectionlens/matching.py",
+    "bijectionlens/models.py",
+    "bijectionlens/spatial.py",
+    "bijectionlens/verify.py",
+    "bijectionlens/worker.py",
+    "bijectionlens-0.1.0.dist-info/licenses/LICENSE",
+    "bijectionlens-0.1.0.dist-info/METADATA",
+    "bijectionlens-0.1.0.dist-info/WHEEL",
+    "bijectionlens-0.1.0.dist-info/entry_points.txt",
+    "bijectionlens-0.1.0.dist-info/top_level.txt",
+    "bijectionlens-0.1.0.dist-info/RECORD"
+  ]
+}

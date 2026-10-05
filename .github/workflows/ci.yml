@@ -1,0 +1,78 @@
+name: qualify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12', '3.13', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install package and build frontend
+        run: python -m pip install . build
+      - name: Standard-library unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Independent mathematical qualification
+        run: python scripts/qualify.py --profile core --output-dir "$RUNNER_TEMP/qualification-core"
+      - name: Build distributions
+        run: python -m build
+      - name: Install wheel outside checkout
+        run: |
+          python -m venv "$RUNNER_TEMP/wheel-env"
+          "$RUNNER_TEMP/wheel-env/bin/python" -m pip install dist/*.whl
+          mkdir -p "$RUNNER_TEMP/wheel-check"
+          cp -R tests scripts examples pyproject.toml "$RUNNER_TEMP/wheel-check/"
+          cd "$RUNNER_TEMP/wheel-check"
+          "$RUNNER_TEMP/wheel-env/bin/python" -m unittest discover -s tests -v
+          "$RUNNER_TEMP/wheel-env/bin/python" -c "from bijectionlens import compare; assert compare([0.75, 0], [0, 1.5], atol=0.8).status == 'matched'"
+      - name: Install source distribution outside checkout
+        run: |
+          python -m venv "$RUNNER_TEMP/sdist-env"
+          "$RUNNER_TEMP/sdist-env/bin/python" -m pip install dist/*.tar.gz
+          mkdir -p "$RUNNER_TEMP/sdist-check"
+          cp -R tests scripts examples pyproject.toml "$RUNNER_TEMP/sdist-check/"
+          cd "$RUNNER_TEMP/sdist-check"
+          "$RUNNER_TEMP/sdist-env/bin/python" -m unittest discover -s tests -v
+          "$RUNNER_TEMP/sdist-env/bin/python" -c "from bijectionlens import bottleneck, verify_bottleneck; r=bottleneck([0], [1+1j]); assert r.status == 'optimal'; assert verify_bottleneck([0], [1+1j], result=r).status == 'valid'"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: core-${{ matrix.python }}
+          path: ${{ runner.temp }}/qualification-core
+          if-no-files-found: warn
+
+  numerical-baselines:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned test-only scientific baselines
+        run: python -m pip install . numpy==2.3.5 scipy==1.17.0
+      - name: Full independent qualification
+        run: python scripts/qualify.py --profile full --output-dir "$RUNNER_TEMP/qualification-full"
+      - name: Representative capacity and negative controls
+        run: python scripts/qualify.py --profile capacity --output-dir "$RUNNER_TEMP/qualification-capacity"
+      - name: All exploratory NumPy examples
+        run: python examples/numpy_roots.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: numerical-baselines-3.12
+          path: |
+            ${{ runner.temp }}/qualification-full
+            ${{ runner.temp }}/qualification-capacity
+          if-no-files-found: warn

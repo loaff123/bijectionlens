@@ -1,0 +1,23 @@
+............FF....
+======================================================================
+FAIL: test_integer_point_not_representable_rejected (test_probe.ContractTests.test_integer_point_not_representable_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 62, in test_integer_point_not_representable_rejected
+    with self.assertRaises(ValueError): compare([2**53+1], [2**53], 0)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_integer_tolerance_not_representable_rejected (test_probe.ContractTests.test_integer_tolerance_not_representable_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 65, in test_integer_tolerance_not_representable_rejected
+    with self.assertRaises(ValueError): compare([0], [0], 2**53+1)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.001s
+
+FAILED (failures=2)

@@ -1,0 +1,9 @@
+all_66067_square_graphs passed
+random_rectangular_graphs passed
+extended_iterative_paths passed
+exact_geometry passed
+complete_spatial_graphs passed
+integer_contract passed
+resource_boundaries passed
+immutable_models passed
+<review>/core-313.json failures [] stable True

@@ -1,0 +1,23 @@
+...F............F...
+======================================================================
+FAIL: test_budget_types_rejected (test_probe.ContractTests.test_budget_types_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 69, in test_budget_types_rejected
+    with self.assertRaises(TypeError): compare([0], [0], 0, edge_cap=cap)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: TypeError not raised
+
+======================================================================
+FAIL: test_negative_budgets_rejected (test_probe.ContractTests.test_negative_budgets_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 73, in test_negative_budgets_rejected
+    with self.assertRaises(ValueError): compare([0], [0], 0, edge_cap=-1)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.002s
+
+FAILED (failures=2)

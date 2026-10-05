@@ -1,0 +1,7 @@
+prearithmetic_shape_and_rational_bounds passed
+both_input_length_prechecks passed
+strict_types_and_missing_slots passed
+all_neighbor_omission_and_optimality passed
+low_integer_string_cap failed
+hard_bottleneck_pair_cap passed
+<review>/adversarial-312.json failures ['low_integer_string_cap'] stable True

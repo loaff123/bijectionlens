@@ -1,0 +1,9 @@
+permutation_bottleneck passed
+random_comparison passed
+synthetic_comparison_certificates passed
+synthetic_bottleneck_certificates passed
+exhaustive_small_real_inputs passed
+bottleneck_limits passed
+determinism_and_permutations passed
+ambient_decimal passed
+<review>/bottleneck-313.json failures [] stable True

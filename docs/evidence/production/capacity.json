@@ -1,0 +1,156 @@
+{
+  "cases": [
+    {
+      "counts": {
+        "edges": 10000,
+        "matching_scans": 100000,
+        "tree_build": 1126116,
+        "tree_visits": 320416
+      },
+      "hard_memory_limit_enforced": false,
+      "id": "sparse-10000",
+      "peak_rss_bytes": 27262976,
+      "peak_rss_scope": "fresh child process, including imports and independent verification",
+      "platform": "Linux",
+      "python": "3.12.14",
+      "resource": null,
+      "solver_seconds": 2.643638,
+      "source_sha256": {
+        "bijectionlens/__init__.py": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+        "bijectionlens/__main__.py": "bd045ddd5242d002f692dac452be9afba38deef5cde541a5fc074bfef5987b91",
+        "bijectionlens/bottleneck.py": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+        "bijectionlens/cli.py": "2f17d0bb0657fd527756fe44567f2677d8029a30bf8ed3c28bc0abec4e606bf6",
+        "bijectionlens/codec.py": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+        "bijectionlens/compare.py": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+        "bijectionlens/contract.py": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+        "bijectionlens/geometry.py": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+        "bijectionlens/matching.py": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+        "bijectionlens/models.py": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+        "bijectionlens/spatial.py": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+        "bijectionlens/verify.py": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+        "bijectionlens/worker.py": "5c5b8c269e718120bad0e1152a0dbfa9bbc62f152fe62654b0262dafe3b7efb7"
+      },
+      "status": "matched",
+      "total_seconds": 2.80019,
+      "verification": "valid"
+    },
+    {
+      "counts": {
+        "edges": 20000,
+        "tree_build": 11807,
+        "tree_visits": 66258
+      },
+      "hard_memory_limit_enforced": false,
+      "id": "dense-400",
+      "peak_rss_bytes": 16646144,
+      "peak_rss_scope": "fresh child process, including imports and independent verification",
+      "platform": "Linux",
+      "python": "3.12.14",
+      "resource": {
+        "limit": 20000,
+        "phase": "edges",
+        "requested": 1,
+        "used": 20000
+      },
+      "solver_seconds": 0.12335,
+      "source_sha256": {
+        "bijectionlens/__init__.py": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+        "bijectionlens/__main__.py": "bd045ddd5242d002f692dac452be9afba38deef5cde541a5fc074bfef5987b91",
+        "bijectionlens/bottleneck.py": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+        "bijectionlens/cli.py": "2f17d0bb0657fd527756fe44567f2677d8029a30bf8ed3c28bc0abec4e606bf6",
+        "bijectionlens/codec.py": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+        "bijectionlens/compare.py": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+        "bijectionlens/contract.py": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+        "bijectionlens/geometry.py": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+        "bijectionlens/matching.py": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+        "bijectionlens/models.py": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+        "bijectionlens/spatial.py": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+        "bijectionlens/verify.py": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+        "bijectionlens/worker.py": "5c5b8c269e718120bad0e1152a0dbfa9bbc62f152fe62654b0262dafe3b7efb7"
+      },
+      "status": "resource_limited",
+      "total_seconds": 0.123492,
+      "verification": null
+    },
+    {
+      "counts": {
+        "bottleneck_pairs": 62500,
+        "edges": 100000,
+        "filtration_checks": 1146968,
+        "filtration_steps": 4,
+        "matching_scans": 224367
+      },
+      "hard_memory_limit_enforced": false,
+      "id": "extreme-bottleneck-250",
+      "peak_rss_bytes": 79859712,
+      "peak_rss_scope": "fresh child process, including imports and independent verification",
+      "platform": "Linux",
+      "python": "3.12.14",
+      "resource": {
+        "limit": 100000,
+        "phase": "edges",
+        "requested": 1,
+        "used": 100000
+      },
+      "solver_seconds": 3.497066,
+      "source_sha256": {
+        "bijectionlens/__init__.py": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+        "bijectionlens/__main__.py": "bd045ddd5242d002f692dac452be9afba38deef5cde541a5fc074bfef5987b91",
+        "bijectionlens/bottleneck.py": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+        "bijectionlens/cli.py": "2f17d0bb0657fd527756fe44567f2677d8029a30bf8ed3c28bc0abec4e606bf6",
+        "bijectionlens/codec.py": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+        "bijectionlens/compare.py": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+        "bijectionlens/contract.py": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+        "bijectionlens/geometry.py": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+        "bijectionlens/matching.py": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+        "bijectionlens/models.py": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+        "bijectionlens/spatial.py": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+        "bijectionlens/verify.py": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+        "bijectionlens/worker.py": "5c5b8c269e718120bad0e1152a0dbfa9bbc62f152fe62654b0262dafe3b7efb7"
+      },
+      "status": "resource_limited",
+      "total_seconds": 3.49727,
+      "verification": null
+    },
+    {
+      "counts": {
+        "bottleneck_pairs": 62500
+      },
+      "hard_memory_limit_enforced": false,
+      "id": "extreme-bottleneck-500",
+      "peak_rss_bytes": 75366400,
+      "peak_rss_scope": "fresh child process, including imports and independent verification",
+      "platform": "Linux",
+      "python": "3.12.14",
+      "resource": {
+        "limit": 62500,
+        "phase": "bottleneck_pairs",
+        "requested": 1,
+        "used": 62500
+      },
+      "solver_seconds": 0.616096,
+      "source_sha256": {
+        "bijectionlens/__init__.py": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+        "bijectionlens/__main__.py": "bd045ddd5242d002f692dac452be9afba38deef5cde541a5fc074bfef5987b91",
+        "bijectionlens/bottleneck.py": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+        "bijectionlens/cli.py": "2f17d0bb0657fd527756fe44567f2677d8029a30bf8ed3c28bc0abec4e606bf6",
+        "bijectionlens/codec.py": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+        "bijectionlens/compare.py": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+        "bijectionlens/contract.py": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+        "bijectionlens/geometry.py": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+        "bijectionlens/matching.py": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+        "bijectionlens/models.py": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+        "bijectionlens/spatial.py": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+        "bijectionlens/verify.py": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+        "bijectionlens/worker.py": "5c5b8c269e718120bad0e1152a0dbfa9bbc62f152fe62654b0262dafe3b7efb7"
+      },
+      "status": "resource_limited",
+      "total_seconds": 0.616312,
+      "verification": null
+    }
+  ],
+  "classification": "representative capacity observations, not universal guarantees",
+  "profile": "capacity",
+  "runner_sha256": "4e54c1cfd1453de9c6b94dc0550b3f732d88f3478e988e5f64ac59b2fab890eb",
+  "status": "completed"
+}

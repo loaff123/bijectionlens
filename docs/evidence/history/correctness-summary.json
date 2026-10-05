@@ -1,0 +1,14 @@
+{
+  "random_cases": 600,
+  "permutations": 36,
+  "boundary_cases": 16,
+  "utility_cases": 5,
+  "bottleneck_cases": 80,
+  "discrepancies": 0,
+  "random_matched": 165,
+  "random_mismatch": 435,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "protocol_sha256": "d55bcdbfb76b9e5c2751954d9abd663de95202dc71869c74bd987a7b09ff6f14"
+}

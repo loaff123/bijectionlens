@@ -1,0 +1,10 @@
+include LICENSE README.md
+recursive-include docs *.md *.json *.jsonl *.log *.py *.txt
+recursive-include examples *.py *.json
+recursive-include scripts *.py
+recursive-include tests *.py
+prune build
+prune dist
+global-exclude __pycache__ *.py[cod]
+
+recursive-include .github *.yml

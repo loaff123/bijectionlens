@@ -1,0 +1,475 @@
+{
+  "passed": 44,
+  "probes": [
+    {
+      "details": {
+        "exit": 0,
+        "status": "matched",
+        "verification": "valid"
+      },
+      "id": "matched",
+      "seconds": 0.113179,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 1,
+        "status": "mismatch",
+        "verification": "valid"
+      },
+      "id": "mismatch",
+      "seconds": 0.130688,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 1,
+        "status": "size_mismatch",
+        "verification": "valid"
+      },
+      "id": "size-mismatch",
+      "seconds": 0.119214,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 2,
+        "status": "invalid",
+        "verification": null
+      },
+      "id": "invalid-coordinate",
+      "seconds": 0.059322,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 3,
+        "status": "resource_limited",
+        "verification": null
+      },
+      "id": "solver-resource",
+      "seconds": 0.120089,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 3,
+        "status": "matched",
+        "verification": "resource_limited"
+      },
+      "id": "verifier-resource-retains-candidate",
+      "seconds": 0.121432,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 3,
+        "status": "resource_limited",
+        "verification": null
+      },
+      "id": "zero-worker-budget",
+      "seconds": 0.070483,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 3,
+        "status": "resource_limited",
+        "verification": null
+      },
+      "id": "tiny-result-budget",
+      "seconds": 0.124006,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 0,
+        "status": "optimal",
+        "verification": "valid"
+      },
+      "id": "optimal",
+      "seconds": 0.137149,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 3,
+        "status": "optimal",
+        "verification": "resource_limited"
+      },
+      "id": "optimal-unverified",
+      "seconds": 0.134636,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 0,
+        "status": "valid",
+        "verification": "valid"
+      },
+      "id": "valid-certificate",
+      "seconds": 0.129612,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 2,
+        "status": "invalid",
+        "verification": "invalid"
+      },
+      "id": "invalid-certificate",
+      "seconds": 0.109042,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 3,
+        "status": "resource_limited",
+        "verification": "resource_limited"
+      },
+      "id": "oversized-certificate-pairs",
+      "seconds": 0.171801,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "bytes": 8388609,
+        "rejected_before_json_loads": true
+      },
+      "id": "oversized-input-before-parser",
+      "seconds": 0.002639,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "bytes": 33554527,
+        "rejected_before_json_loads": true
+      },
+      "id": "oversized-certificate-before-parser",
+      "seconds": 3.96653,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "bytes": 8388703,
+        "rejected_before_json_loads": true
+      },
+      "id": "oversized-envelope-before-parser",
+      "seconds": 0.9854,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "rejected_before_integer_conversion": true
+      },
+      "id": "oversized-integer-before-conversion",
+      "seconds": 0.007417,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "digits": 2501,
+        "status": "resource_limited"
+      },
+      "id": "q_numerator-digits-bound",
+      "seconds": 0.000335,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "digits": 2467,
+        "status": "resource_limited"
+      },
+      "id": "q_numerator-bits-bound",
+      "seconds": 0.000428,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "digits": 2501,
+        "status": "resource_limited"
+      },
+      "id": "q_denominator-digits-bound",
+      "seconds": 0.00011,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "digits": 2467,
+        "status": "resource_limited"
+      },
+      "id": "q_denominator-bits-bound",
+      "seconds": 0.000274,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "hostile_fields_rejected_without_callbacks": 24
+      },
+      "id": "hostile-fields-no-callbacks",
+      "seconds": 0.000233,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "child_joined": true,
+        "elapsed": 0.5050855439985753,
+        "outcome": "WorkerTimeout"
+      },
+      "id": "timeout-unfinished-result",
+      "seconds": 0.505112,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "child_joined": true,
+        "elapsed": 0.07763288900059706,
+        "outcome": "WorkerError"
+      },
+      "id": "worker-crash-after-result",
+      "seconds": 0.077652,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "child_joined": true,
+        "elapsed": 0.09704082799908065,
+        "outcome": "WorkerError"
+      },
+      "id": "worker-missing-result",
+      "seconds": 0.097061,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "child_joined": true,
+        "elapsed": 0.09495696799967845,
+        "outcome": "WorkerError"
+      },
+      "id": "worker-oversized-result",
+      "seconds": 0.094972,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "kill_and_join_confirmed": true,
+        "seconds": 0.9529376259997662
+      },
+      "id": "kill-and-join-escalation",
+      "seconds": 0.953048,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 4,
+        "status": "error"
+      },
+      "id": "symlink-loop-input",
+      "seconds": 0.056763,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 2,
+        "scope": "direct main(argv); OS argv cannot contain NUL",
+        "status": "invalid"
+      },
+      "id": "nul-main-argv-input",
+      "seconds": 0.001148,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 4,
+        "status": "error"
+      },
+      "id": "symlink-loop-output",
+      "seconds": 0.055256,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 2,
+        "scope": "direct main(argv); OS argv cannot contain NUL",
+        "status": "invalid"
+      },
+      "id": "nul-main-argv-output",
+      "seconds": 0.000961,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 2,
+        "input_preserved": true
+      },
+      "id": "stdin-alias-same",
+      "seconds": 0.055615,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 2,
+        "input_preserved": true
+      },
+      "id": "stdin-alias-hardlink",
+      "seconds": 0.065758,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 2,
+        "input_preserved": true
+      },
+      "id": "stdin-alias-symlink",
+      "seconds": 0.05392,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exits": [
+          0,
+          4
+        ],
+        "valid_complete_output": true
+      },
+      "id": "simultaneous-no-clobber-publishers",
+      "seconds": 0.150592,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 4,
+        "status": "error"
+      },
+      "id": "worker-protocol-version-bool",
+      "seconds": 0.001149,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 4,
+        "status": "error"
+      },
+      "id": "worker-protocol-kind-str",
+      "seconds": 0.000791,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 4,
+        "status": "error"
+      },
+      "id": "worker-protocol-status-str",
+      "seconds": 0.000696,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 4,
+        "status": "error"
+      },
+      "id": "worker-protocol-verification-NoneType",
+      "seconds": 0.000692,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 4,
+        "status": "error"
+      },
+      "id": "worker-protocol-verification-dict",
+      "seconds": 0.000692,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 4,
+        "status": "error"
+      },
+      "id": "worker-protocol-result.pairs-list",
+      "seconds": 0.000871,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "exit": 4,
+        "status": "error"
+      },
+      "id": "worker-protocol-result.verification_status-str",
+      "seconds": 0.000751,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "all_standard_library": true,
+        "external_imports": [
+          "__future__",
+          "argparse",
+          "collections",
+          "dataclasses",
+          "decimal",
+          "errno",
+          "fractions",
+          "functools",
+          "json",
+          "math",
+          "multiprocessing",
+          "os",
+          "pathlib",
+          "stat",
+          "struct",
+          "sys",
+          "tempfile",
+          "typing"
+        ]
+      },
+      "id": "stdlib-import-scan",
+      "seconds": 0.022245,
+      "status": "passed"
+    },
+    {
+      "details": {
+        "denominator_digits": 647,
+        "process_global_limit_unchanged": true,
+        "status": "valid"
+      },
+      "id": "lowered-decimal-conversion-limit",
+      "seconds": 0.000624,
+      "status": "passed"
+    }
+  ],
+  "python": "3.13.5",
+  "source_sha256_after": {
+    "__init__.py": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+    "__main__.py": "bd045ddd5242d002f692dac452be9afba38deef5cde541a5fc074bfef5987b91",
+    "bottleneck.py": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+    "cli.py": "2f17d0bb0657fd527756fe44567f2677d8029a30bf8ed3c28bc0abec4e606bf6",
+    "codec.py": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+    "compare.py": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+    "contract.py": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+    "geometry.py": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+    "matching.py": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+    "models.py": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+    "spatial.py": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+    "verify.py": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+    "worker.py": "5c5b8c269e718120bad0e1152a0dbfa9bbc62f152fe62654b0262dafe3b7efb7"
+  },
+  "source_sha256_before": {
+    "__init__.py": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+    "__main__.py": "bd045ddd5242d002f692dac452be9afba38deef5cde541a5fc074bfef5987b91",
+    "bottleneck.py": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+    "cli.py": "2f17d0bb0657fd527756fe44567f2677d8029a30bf8ed3c28bc0abec4e606bf6",
+    "codec.py": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+    "compare.py": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+    "contract.py": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+    "geometry.py": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+    "matching.py": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+    "models.py": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+    "spatial.py": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+    "verify.py": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+    "worker.py": "5c5b8c269e718120bad0e1152a0dbfa9bbc62f152fe62654b0262dafe3b7efb7"
+  },
+  "source_unchanged": true,
+  "status": "passed",
+  "total": 44
+}

@@ -1,0 +1,16 @@
+{
+  "sparse_n": 10000,
+  "seconds": 1.6078689350006243,
+  "peak_rss_bytes": 17170432,
+  "edges": 10000,
+  "visits": 247952,
+  "status": "matched",
+  "independent_pair_checks": 10000,
+  "dense_negative": {
+    "status": "resource_limited",
+    "reason": "edges",
+    "visits": 6357,
+    "edges": 20000
+  },
+  "scope": "One original sparse grid, one original dense limit control; no speed superiority claim."
+}

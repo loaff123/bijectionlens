@@ -1,0 +1,179 @@
+FFFFFFFFFFFFFFFF
+======================================================================
+FAIL: test_bool_rejected (test_probe.ContractTests.test_bool_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 50, in test_bool_rejected
+    with self.assertRaises(TypeError): compare([True], [1], 0)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: TypeError not raised
+
+======================================================================
+FAIL: test_bottleneck_exact (test_probe.ContractTests.test_bottleneck_exact)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 59, in test_bottleneck_exact
+    self.assertEqual(bottleneck_squared([0j, 3+0j], [0j, -1+2.5j]), Fraction(9))
+AssertionError: None != Fraction(9, 1)
+
+======================================================================
+FAIL: test_boundary_below (test_probe.ContractTests.test_boundary_below)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 33, in test_boundary_below
+    self.assertEqual(compare([3+4j], [0], math.nextafter(5, 0))['status'], 'mismatch')
+AssertionError: 'unimplemented' != 'mismatch'
+- unimplemented
++ mismatch
+
+
+======================================================================
+FAIL: test_cardinality_mismatch (test_probe.ContractTests.test_cardinality_mismatch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 27, in test_cardinality_mismatch
+    self.assertEqual(compare([0], [0, 0], 0)['status'], 'size_mismatch')
+AssertionError: 'unimplemented' != 'size_mismatch'
+- unimplemented
++ size_mismatch
+
+
+======================================================================
+FAIL: test_complex_crossing (test_probe.ContractTests.test_complex_crossing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 19, in test_complex_crossing
+    self.assertEqual(compare([0j, 3+0j], [0j, -1+2.5j], 3)['status'], 'matched')
+AssertionError: 'unimplemented' != 'matched'
+- unimplemented
++ matched
+
+
+======================================================================
+FAIL: test_edge_cap_inconclusive (test_probe.ContractTests.test_edge_cap_inconclusive)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 53, in test_edge_cap_inconclusive
+    self.assertEqual(compare([0]*10, [0]*10, 0, edge_cap=20)['status'], 'resource_limited')
+AssertionError: 'unimplemented' != 'resource_limited'
+- unimplemented
++ resource_limited
+
+
+======================================================================
+FAIL: test_empty (test_probe.ContractTests.test_empty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 10, in test_empty
+    self.assertEqual(compare([], [], 0), {'status':'matched', 'pairs':[], 'cardinality':0, 'hall':None, 'visits':0, 'edges':0})
+AssertionError: {'status': 'unimplemented', 'pairs': [], 'cardinality[40 chars]': 0} != {'status': 'matched', 'pairs': [], 'cardinality': 0, [33 chars]': 0}
+- {'cardinality': -1,
+?                 ^^
+
++ {'cardinality': 0,
+?                 ^
+
+   'edges': 0,
+   'hall': None,
+   'pairs': [],
+-  'status': 'unimplemented',
+?             --- ^^^^^^
+
++  'status': 'matched',
+?              ^ ++
+
+   'visits': 0}
+
+======================================================================
+FAIL: test_exact_boundary (test_probe.ContractTests.test_exact_boundary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 30, in test_exact_boundary
+    self.assertEqual(compare([3+4j], [0], 5)['status'], 'matched')
+AssertionError: 'unimplemented' != 'matched'
+- unimplemented
++ matched
+
+
+======================================================================
+FAIL: test_exact_cancellation_trap (test_probe.ContractTests.test_exact_cancellation_trap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 16, in test_exact_cancellation_trap
+    self.assertEqual(compare([0, .9], [0, -.9], 1)['cardinality'], 2)
+AssertionError: -1 != 2
+
+======================================================================
+FAIL: test_extreme_no_overflow (test_probe.ContractTests.test_extreme_no_overflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 36, in test_extreme_no_overflow
+    self.assertEqual(compare([1e308+1e308j], [-1e308-1e308j], 1e308)['status'], 'mismatch')
+AssertionError: 'unimplemented' != 'mismatch'
+- unimplemented
++ mismatch
+
+
+======================================================================
+FAIL: test_greedy_overlap (test_probe.ContractTests.test_greedy_overlap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 13, in test_greedy_overlap
+    self.assertEqual(compare([0.75, 0], [0, 1.5], .8)['cardinality'], 2)
+AssertionError: -1 != 2
+
+======================================================================
+FAIL: test_hall_shortage (test_probe.ContractTests.test_hall_shortage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 23, in test_hall_shortage
+    self.assertEqual(result['status'], 'mismatch')
+AssertionError: 'unimplemented' != 'mismatch'
+- unimplemented
++ mismatch
+
+
+======================================================================
+FAIL: test_invalid_tolerance_rejected (test_probe.ContractTests.test_invalid_tolerance_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 47, in test_invalid_tolerance_rejected
+    with self.assertRaises(ValueError): compare([0], [0], tol)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_nonfinite_rejected (test_probe.ContractTests.test_nonfinite_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 43, in test_nonfinite_rejected
+    with self.assertRaises(ValueError): compare([value], [0], 1)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_subnormal_no_underflow (test_probe.ContractTests.test_subnormal_no_underflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 39, in test_subnormal_no_underflow
+    self.assertEqual(compare([complex(5e-324, 5e-324)], [0], 5e-324)['status'], 'mismatch')
+AssertionError: 'unimplemented' != 'mismatch'
+- unimplemented
++ mismatch
+
+
+======================================================================
+FAIL: test_visit_cap_inconclusive (test_probe.ContractTests.test_visit_cap_inconclusive)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<feasibility-checkout>/probe/test_probe.py", line 56, in test_visit_cap_inconclusive
+    self.assertEqual(compare([0]*10, [0]*10, 0, visit_cap=2)['status'], 'resource_limited')
+AssertionError: 'unimplemented' != 'resource_limited'
+- unimplemented
++ resource_limited
+
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.003s
+
+FAILED (failures=16)

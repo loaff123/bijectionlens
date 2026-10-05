@@ -1,0 +1,10 @@
+{
+  "classification": "post-gate exploratory; not held-out; all inspected cases preserved",
+  "numpy": "2.3.5",
+  "cases": 12,
+  "all_matched": true,
+  "sorted_passes": 9,
+  "sorted_false_negatives": 3,
+  "source": "https://numpy.org/doc/stable/reference/generated/numpy.polynomial.polynomial.polyroots.html",
+  "limitation": "One installed NumPy runtime; not a current upstream bug report or root-solver accuracy guarantee."
+}

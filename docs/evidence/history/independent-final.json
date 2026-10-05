@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "seconds": 4.767,
+  "checks": {
+    "exhaustive_square_graphs_n_0_through_4": 66067,
+    "random_rectangular_graphs": 500,
+    "independent_spatial_graphs_extreme_and_clustered": 240,
+    "independent_bottleneck_permutation_cases": 160
+  },
+  "contract_observations": {
+    "integer_rounding_alias": {
+      "exception": "ValueError",
+      "message": "integer point is not exactly binary64 representable"
+    },
+    "nan_budgets": {
+      "exception": "TypeError",
+      "message": "budgets must be builtin integers"
+    },
+    "negative_budget_empty": {
+      "exception": "ValueError",
+      "message": "budgets must be nonnegative"
+    }
+  },
+  "prototype_sha256": "8e175c2a06085474eea1b43cea843276a7ac70796cfc5f006cebad24915134c1",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "seed": 1104202605
+}

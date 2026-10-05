@@ -1,0 +1,117 @@
+{
+  "runtime": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "checks": {
+    "permutation_bottleneck": {
+      "status": "passed",
+      "seconds": 0.8722798349990626,
+      "detail": {
+        "cases": 688,
+        "enumerated_permutations": 480892,
+        "seed": 611385
+      }
+    },
+    "random_comparison": {
+      "status": "passed",
+      "seconds": 0.4686112140007026,
+      "detail": {
+        "cases": 1000,
+        "statuses": {
+          "mismatch": 703,
+          "matched": 297
+        }
+      }
+    },
+    "synthetic_comparison_certificates": {
+      "status": "passed",
+      "seconds": 0.36895636599911086,
+      "detail": {
+        "certificates": 12000,
+        "statuses": {
+          "valid": 243,
+          "invalid": 11757
+        }
+      }
+    },
+    "synthetic_bottleneck_certificates": {
+      "status": "passed",
+      "seconds": 0.29911448300117627,
+      "detail": {
+        "certificates": 5000,
+        "statuses": {
+          "valid": 90,
+          "invalid": 4910
+        }
+      }
+    },
+    "exhaustive_small_real_inputs": {
+      "status": "passed",
+      "seconds": 0.8783176329998241,
+      "detail": {
+        "comparison_cases": 2460,
+        "bottleneck_cases": 820
+      }
+    },
+    "bottleneck_limits": {
+      "status": "passed",
+      "seconds": 0.004800311000508373,
+      "detail": {
+        "phase_exact_counts": {
+          "bottleneck_pairs": 16,
+          "edges": 39,
+          "filtration_checks": 225,
+          "filtration_steps": 68,
+          "matching_scans": 230
+        },
+        "verify_pairs": 12
+      }
+    },
+    "determinism_and_permutations": {
+      "status": "passed",
+      "seconds": 0.02996642099969904,
+      "detail": {
+        "input_permutation_pairs": 36,
+        "byte_equivalent_serializations": 10
+      }
+    },
+    "ambient_decimal": {
+      "status": "passed",
+      "seconds": 0.000784046000262606,
+      "detail": {
+        "current_context": "isolated",
+        "DefaultContext": "isolated"
+      }
+    }
+  },
+  "failures": [],
+  "before": {
+    "__init__.py": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+    "__main__.py": "bd045ddd5242d002f692dac452be9afba38deef5cde541a5fc074bfef5987b91",
+    "bottleneck.py": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+    "cli.py": "2f17d0bb0657fd527756fe44567f2677d8029a30bf8ed3c28bc0abec4e606bf6",
+    "codec.py": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+    "compare.py": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+    "contract.py": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+    "geometry.py": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+    "matching.py": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+    "models.py": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+    "spatial.py": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+    "verify.py": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+    "worker.py": "5c5b8c269e718120bad0e1152a0dbfa9bbc62f152fe62654b0262dafe3b7efb7"
+  },
+  "after": {
+    "__init__.py": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+    "__main__.py": "bd045ddd5242d002f692dac452be9afba38deef5cde541a5fc074bfef5987b91",
+    "bottleneck.py": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+    "cli.py": "2f17d0bb0657fd527756fe44567f2677d8029a30bf8ed3c28bc0abec4e606bf6",
+    "codec.py": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+    "compare.py": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+    "contract.py": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+    "geometry.py": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+    "matching.py": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+    "models.py": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+    "spatial.py": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+    "verify.py": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+    "worker.py": "5c5b8c269e718120bad0e1152a0dbfa9bbc62f152fe62654b0262dafe3b7efb7"
+  },
+  "stable_tested_source": true
+}

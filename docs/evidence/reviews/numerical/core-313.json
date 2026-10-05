@@ -1,0 +1,109 @@
+{
+  "runtime": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "checks": {
+    "all_66067_square_graphs": {
+      "status": "passed",
+      "seconds": 2.456480171000294,
+      "detail": {
+        "graphs": 66067,
+        "oracle": "minimum vertex cover exhaustive left subsets"
+      }
+    },
+    "random_rectangular_graphs": {
+      "status": "passed",
+      "seconds": 0.28056358700087003,
+      "detail": {
+        "graphs": 1500
+      }
+    },
+    "extended_iterative_paths": {
+      "status": "passed",
+      "seconds": 0.20593990099951043,
+      "detail": {
+        "vertices_each_side": 20000,
+        "perfect_counts": {
+          "matching_scans": 399997
+        },
+        "hall_counts": {
+          "matching_scans": 439994
+        }
+      }
+    },
+    "exact_geometry": {
+      "status": "passed",
+      "seconds": 0.7659071839989338,
+      "detail": {
+        "bit_lattice_distances": 12000,
+        "bit_lattice_boxes": 2500
+      }
+    },
+    "complete_spatial_graphs": {
+      "status": "passed",
+      "seconds": 2.9419588680011657,
+      "detail": {
+        "complete_graph_cases": 503
+      }
+    },
+    "integer_contract": {
+      "status": "passed",
+      "seconds": 0.019022160000531585,
+      "detail": {
+        "integers_both_signs_and_tolerance": 3356
+      }
+    },
+    "resource_boundaries": {
+      "status": "passed",
+      "seconds": 0.031434144999366254,
+      "detail": {
+        "boundary_counts": {
+          "edges": 247,
+          "matching_scans": 1701,
+          "tree_build": 503,
+          "tree_visits": 1023
+        },
+        "over_limit_true_sizes": 3
+      }
+    },
+    "immutable_models": {
+      "status": "passed",
+      "seconds": 0.0001415410006302409,
+      "detail": {
+        "alias_checks": "pairs, Hall sides, counts",
+        "frozen_checks": 4,
+        "ambiguous_bool_rejections": 2
+      }
+    }
+  },
+  "failures": [],
+  "before": {
+    "__init__.py": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+    "__main__.py": "bd045ddd5242d002f692dac452be9afba38deef5cde541a5fc074bfef5987b91",
+    "bottleneck.py": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+    "cli.py": "2f17d0bb0657fd527756fe44567f2677d8029a30bf8ed3c28bc0abec4e606bf6",
+    "codec.py": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+    "compare.py": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+    "contract.py": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+    "geometry.py": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+    "matching.py": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+    "models.py": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+    "spatial.py": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+    "verify.py": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+    "worker.py": "5c5b8c269e718120bad0e1152a0dbfa9bbc62f152fe62654b0262dafe3b7efb7"
+  },
+  "after": {
+    "__init__.py": "9eaf24b15b60c779835d44875e57258ee6741dce0374f94537fbe55b37153d88",
+    "__main__.py": "bd045ddd5242d002f692dac452be9afba38deef5cde541a5fc074bfef5987b91",
+    "bottleneck.py": "46dc03ca89f8bca1a010f851dd607a29b6cc37a43a2d285ac568e477625fe6bd",
+    "cli.py": "2f17d0bb0657fd527756fe44567f2677d8029a30bf8ed3c28bc0abec4e606bf6",
+    "codec.py": "149eb7c41225f9eb6962ee1d968321d6040b2c6ac7c222c346e38314a482a98d",
+    "compare.py": "98031cb18ccede42b5073c339e573921b8e14a15223a6a7c2256804ac7a5d95f",
+    "contract.py": "3c97b758f1cb12ca2fd211af12aea701ee1ca2143675729c6fd673b7b15d455b",
+    "geometry.py": "340b75b1106f276e31dc2660cdfe26e1fa2f65473bf922d6ad4d24f639112adf",
+    "matching.py": "83684ea96306eb8578e1081cc32351deb783ac4122cc9b074a7e64950fcd1cdf",
+    "models.py": "fc9b2b5847fb9dce0b47b8f6d5fd43fcca45a9ed8de569cefddbfca966d24bfe",
+    "spatial.py": "3df68500c0d19dbc7baa825d522bc42f3e061786ee27dd88a293995c8958cfe1",
+    "verify.py": "4d43580f4db2d3e60bafe24b5a4b9f1edf2eb353478a0518d38e2705f73eeb43",
+    "worker.py": "5c5b8c269e718120bad0e1152a0dbfa9bbc62f152fe62654b0262dafe3b7efb7"
+  },
+  "stable_tested_source": true
+}
