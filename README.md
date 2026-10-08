@@ -72,6 +72,8 @@ This compares stored numerical results. It does not establish the accuracy of
 roots, eigenvalues, or the underlying scientific computation. See the complete
 [numerical contract and limits](docs/numerical-contract.md).
 
+Successful matching and independent verification certify only scalar-value correspondence. They do not establish the identity or continuity of a physical state or root branch through a parameter sweep, even when the bottleneck radius is zero.
+
 ## Exact bottleneck diagnostic
 
 ```python

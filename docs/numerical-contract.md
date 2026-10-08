@@ -43,6 +43,8 @@ A maximum matching then finds the greatest feasible number of disjoint occurrenc
 pairs. For fixed inputs, output is deterministic; input permutations preserve
 verdict, cardinality and optimum threshold, but may change the selected pair indices.
 
+Each comparison treats its two scalar sequences in isolation. A matched or optimal result, and a valid verification of it, provide no information about eigenvectors, phases, invariant subspaces, or the path between parameter samples. Degenerate eigenvectors are nonunique, and coarse sampling can miss an avoided crossing. Tracking requires a declared branch convention and appropriate additional data; the returned pairs must not be interpreted as physical or adiabatic branch labels.
+
 ## Comparison results and independent verification
 
 `ComparisonResult.status` is `matched`, `mismatch`, `size_mismatch`, or
